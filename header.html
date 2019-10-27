@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/animate.css" >
+    <style>
+        *{margin: 0;padding: 0;
+        box-sizing: border-box;text-decoration:none}
+        @keyframes xl{
+            0%{transform:rotate(0deg)}
+            100%{transform:rotate(0deg)}
+        }
+        #content{
+            width: 100%;
+            border-top:3px solid #BE9954; 
+            height: 100px;
+            /* position: relative; */
+            padding: 20px;
+            position: fixed;
+            top: 1px;
+            /* background: pink; */
+            /* position: relative; */
+            /* background: #fff; */
+
+        }
+        #content>img{
+            width: 105px;
+            /* height:75px; */
+            position: absolute;
+            left: 13%;
+        }
+
+        #topNavText>ul{
+            list-style: none;
+            margin-right: 50px           
+        }
+        #bottomNavText ul{
+            list-style: none;
+        }
+        #topNavText>ul>li{
+            float:right;
+            font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+            padding: 0 20px;
+            font-style: italic;
+            color: rgb(104, 101, 102);
+            font-size: 15px;
+            cursor: pointer;
+            font-style: italic;
+            text-shadow: 1px 1px 5px rgb(199, 193, 193);
+
+        }
+        #topNavText input{
+            width:150px; height: 30px;
+            border-radius: 5px;
+            border: 0;
+            position: relative;top: -5px;
+            background-image: url(search.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center right;
+        }
+        #bottomNavText{
+            width: 50%;
+            position: absolute;
+            top: 75%;left:45%;
+            /* background: gold */
+            
+        }
+       
+        #bottomNavText ul li{
+            font-family: "aaux-next",Helvetica,Arial,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            float: right;
+            padding: 0 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #topNavText>ul>li:hover{
+            text-decoration: underline;
+            
+        }
+        #bottomNavText ul li a{
+            color: black
+        }
+        #bottomNavText ul li a:hover{
+            color: #BE9954
+        }
+        
+        #x2,#x3,#x1{
+            width: 100%;height: 239px;
+            background-color:#32322D;
+            margin-top: 4px;
+            display: none;
+            animation: xl 3600s;
+            position:fixed;
+            top: 110px;
+            
+        }
+        
+        .imgs2,.imgs3,.imgs4{
+            width: 75%;height: 210px;
+            margin: 0 auto;
+            /* background: red; */
+            display: flex;
+                        
+        }
+        body img:hover{
+            /* animation:shake 1s; */
+            /* animation:jello 1s; */
+            animation:pulse 3s;
+        }
+        .imgs2>img,.imgs3>img,.imgs4>img{
+            width: 20%;height: auto;
+            padding:12px 15px 4px;;
+            margin: 0 auto
+        }
+        #x2>p,#x3>p,#x1>p{
+            background:#444444b0;
+            text-align: center;
+            padding: 4px;
+            color: #fff;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        #x2>p:hover,#x3>p:hover,#x1>p:hover{
+            background:#636262b0;
+        }
+        #x2:target{
+           display: block;
+           
+        }
+        #x3:target{
+           display: block
+        }
+        #x1:target{
+           display: block
+        }
+        #x4:target{
+           display: block;
+           /* cursor:pointer; */
+        }
+        #x4{
+            width: 100%;height: 300px;
+            background-color:#32322D;
+            margin-top: 6px;
+            padding-top: 10px;
+            display: none;
+            animation: xl 3600s;
+            position:fixed;
+            top: 110px;
+        }
+       
+        #x4>#top{
+            width: 80%;height: 90%;
+            margin: 0 auto;
+            display: flex;
+            /* justify-content:space-around;    */
+        }
+        
+        #top>#left{
+            width: 40%;
+        } 
+        #top>#right{
+            width: 60%;
+            /* background: pink; */
+        }
+        #top>#left>#leftText{
+            width: 100%;
+            color: #fff;
+
+        }
+        #left>#leftimgs>img{
+            width: 185px;
+            float: left;
+            padding:0 20px;
+            margin-top:3%;
+            cursor:pointer;
+        }
+        #right>#rightText>p{
+            color: #fff;
+        }
+        /* #top>#left>#leftimgs>#img{
+            width: 100%;
+        } */
+        #table{
+            padding: 1px 0;
+        }
+        table{
+            width: 100%;
+            color: #fff;
+            border-spacing:0 15px;
+            /* font-weight: bold; */
+        }
+        hr{
+            width: 85%;
+            margin-top: 1px
+        }
+        td:hover{
+            cursor:pointer;
+            text-decoration:underline;
+        }
+        #bottom p{
+            text-align: center;
+            background: #444444b0;
+            padding: 4px;
+            color: #fff;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        #bottom p:hover{
+            background:#636262b0;
+        }
+        
+    </style>
+</head>
+<body>
+    
+<div id="content">
+        <img src="http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/rh-logo.svg" alt="">
+        <div id="topNavText">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Search">
+                </li>
+                <li>partners</li>
+                <li>Imprints</li>
+                <li>Events</li>
+                <li>Sign up</li>
+            </ul>
+        </div>
+        <div id="bottomNavText">
+            <ul>              
+                <li><a href="#x1" id="a1">COMING SOON</a></li>
+                <li><a href="#x2">NEW RELEASES</a></li>
+                <li><a href="#x3">BESTSELLERS</a></li>
+                <li><a href="#x4">OUR BOOKS</a></li>
+            </ul>       
+        </div>   
+</div>
+
+<div id="x2">
+        <div class="imgs2">
+            <img src="public/image/1.jpg" alt="">
+            <img src="public/image/2.jpg" alt="">
+            <img src="public/image/3.jpg" alt="">
+            <img src="public/image/4.jpg" alt="">
+            <img src="public/image/5.jpg" alt="">
+        </div>
+        <p>新出版</p>
+</div>   
+<div id="x3">
+        <div class="imgs3">           
+            <img src="public/image/6.jpg" alt="">
+            <img src="public/image/7.jpg" alt="">
+            <img src="public/image/8.jpg" alt="">
+            <img src="public/image/9.jpg" alt="">
+            <img src="public/image/10.jpg" alt="">
+        </div>
+        <p>所有畅销书</p>
+</div> 
+<div id="x1">
+        <div class="imgs4">           
+            <img src="public/image/11.jpg" alt="">
+            <img src="public/image/12.jpg" alt="">
+            <img src="public/image/13.jpg" alt="">
+            <img src="public/image/14.jpg" alt="">
+            <img src="public/image/15.jpg" alt="">
+        </div>
+        <p>即将上线</p>
+</div> 
+<div id="x4">
+    <div id="top"> 
+    <div id="left">
+        <div id="leftText">
+            <p>推荐书籍</p>
+            <hr>
+        </div>
+        <div id="leftimgs">
+            <img src="public/image/16.jpg" alt="">
+            <img src="public/image/17.jpg" alt="">
+        </div>
+    </div>
+    <div id="right">
+    <div id="rightText">
+        <p>题材分类</p>
+        <hr>
+    </div>
+    <div id="table">
+        <table>
+            <tr>
+                <td>传记与回忆录</td>
+                <td>经典</td>
+            </tr>
+            <tr>
+                <td>烹饪</td>
+                <td>推荐</td>
+            </tr>
+            <tr>
+                <td>小说与诗歌</td>
+                <td>健康与保健</td>
+            </tr>
+            <tr>
+                <td>非小说类</td>
+                <td>浪漫</td>
+            </tr>
+            <tr>
+                <td>科幻</td>
+                <td>宗教</td>
+            </tr>
+            <tr>
+                <td>惊悚与神秘</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+    <div id="bottom">
+        <p>更多书籍</p>
+    </div>
+</div>
+    
+<script>
+var content = document.getElementById("x1");
+var Moveout = document.getElementById("x1");
+Moveout.onmouseover = function () {
+            content.style.display = "block";
+        }
+        function Moveoutsover() {
+            content.style.display = "block";
+        }
+Moveout.onmouseout = function () {
+            content.style.display = "none";
+        }              
+        function MoveoutSout() {
+            content.style.display = "none";
+        }
+
+var content2 = document.getElementById("x2");
+var Moveout2 = document.getElementById("x2");
+Moveout2.onmouseover = function () {
+            content2.style.display = "block";
+        }
+        function Moveoutsover() {
+            content2.style.display = "block";
+        }
+Moveout2.onmouseout = function () {
+            content2.style.display = "none";
+        }              
+        function MoveoutSout() {
+            content2.style.display = "none";
+        }
+var content3 = document.getElementById("x3");
+var Moveout3 = document.getElementById("x3");
+Moveout3.onmouseover = function () {
+            content3.style.display = "block";
+        }
+        function Moveoutsover() {
+            content3.style.display = "block";
+        }
+Moveout3.onmouseout = function () {
+            content3.style.display = "none";
+        }              
+        function MoveoutSout() {
+            content3.style.display = "none";
+        }
+var content4 = document.getElementById("x4");
+var Moveout4 = document.getElementById("x4");
+Moveout4.onmouseover = function () {
+            content4.style.display = "block";
+        }
+        function Moveoutsover() {
+            content4.style.display = "block";
+        }
+Moveout4.onmouseout = function () {
+            content4.style.display = "none";
+        }              
+        function MoveoutSout() {
+            content4.style.display = "none";
+        }
+
+
+</script>
+
+    
+</body>
+</html>

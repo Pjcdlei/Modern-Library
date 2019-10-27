@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style: none;
+        }
+
+    .footer{
+        background: #23231E;
+        color: #fff;
+    }
+    .footer-width{
+        padding: 40px 20px;
+        margin: 0 auto;
+        max-width: 980px;
+    }
+    .footer-section{
+        margin-bottom: 45px;
+    }
+    
+    .footer-intro{
+        width: 60%;
+        float: left;
+        /* background: pink; */
+        margin-right: 5%;
+    }
+
+    
+    .underline{
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        font-family: "aaux-next",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1px;
+        padding-bottom: 3px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .about{
+        font-family: "aaux-next",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 160%;
+    }
+    .company{
+        font-family: "aaux-next",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        margin-top:20px;
+    }
+    .footer-resources{
+        width: 35%;
+        float: right;
+        /* background: pink; */
+    }
+    .footer-resourcesItem{
+        margin-bottom: 5px;
+        padding: 2px 0;
+        
+    }
+    .footer-resourcesLink{
+        font-family: "aaux-next",Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        font-weight: 400px;
+        font-style: normal;
+        display: inline-block;
+        border-bottom: 1px dotted rgba(255,255,255,0.6);
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    .footer-resourcesLink:hover{
+        color: #BE9954;
+        border-bottom: 1px dotted #BE9954;
+    }
+    .footer-aboutItem{
+        display: inline-block;       
+    }
+    .footer-aboutItem::after{
+        content: "|";
+        margin: 0 5px;
+    }
+    .footer-aboutList>li:last-child::after{
+        display: none;
+    }
+    .footer-social{
+        width: 35%;
+        float: right;
+        /* clear: both; */
+    }
+    .footer-socItem{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .footer-socLink{
+        width: 20px;height: 20px;
+        display: inline-block;
+        margin-top: 5px;
+        transition: all 0.5s ease;    
+    }
+    .footer-socLink:hover{
+        box-shadow: 20px 20px 180px 100px pink;
+    }
+    ::selection {
+    background: #BE9954;
+    }
+    .footer-socLinktwitter{
+        background-image: url(http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/twitter--white.svg)
+    }
+    .footer-socLinkfacebook{
+        background-image: url(http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/facebook--white.svg)
+    }
+    .footer-socLinkinstagram{
+        background-image: url(http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/instagram--white.svg)
+    }
+    .footer-socLinkpinterest{
+        background-image: url(http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/pinterest--white.svg)
+    }
+    .footer-brand{
+        width: 60%;
+        float: left;
+        margin-right: 5%;
+        /* background: #BE9954; */
+    }
+    .footer-logo{
+        width: 260px;
+    }
+    .copyright{
+        display: block;
+        clear: both;
+        font-family: "aaux-next",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <footer class="footer-width">
+            <div class="footer-intro footer-section">
+                <h5 class="underline">RANDOM HOUSE</h5>
+                <p class="about">Founded in 1925, Random House is the proud publishing house of the world’s most acclaimed storytellers, thought leaders, and innovators. Our host of imprints—including Ballantine Bantam Dell, Del Rey/Spectra, The Dial Press, LucasBooks, The Modern Library, Random House, and Spiegel & Grau—publish original fiction and nonfiction in all formats with the mission to entertain, educate and inspire readers for generations.</p>
+                <p class="company">A Penguin Random House Company</p>
+            </div>
+            <div class="footer-resources footer-section">
+                <h5 class="underline">RESOURCES</h5>
+                <ul class="footer-resourcesList">
+                    <li class="footer-resourcesItem"><a class="footer-resourcesLink" href="">Partners</a></li>
+                    <li class="footer-resourcesItem"><a class="footer-resourcesLink" href="">penguinrandomhouse.com</a></li>
+                    <li class="footer-resourcesItem"><a class="footer-resourcesLink" href="">Search Penguin Random House</a></li>
+                </ul>
+                <ul class="footer-aboutList">
+                    <li class="footer-aboutItem"><a href="" class="footer-resourcesLink">Terms of Use</a></li>
+                    <li class="footer-aboutItem"><a href="" class="footer-resourcesLink">Privacy Policy</a></li>
+                    <li class="footer-aboutItem"><a href="" class="footer-resourcesLink">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-brand footer-section">
+                <a href="">
+                    <img class="footer-logo" src="http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/rh-logo--footer.svg" alt="" class="footer-logo">
+                </a>
+            </div>
+            <div class="footer-social footer-section">
+                <h5 class="underline">Keep In Touch</h5>
+                <ul class="footer-socList">
+                    <li class="footer-socItem"><a href="" class="footer-socLink footer-socLinktwitter"></a></li>
+                    <li class="footer-socItem"><a href="" class="footer-socLink footer-socLinkfacebook"></a></li>
+                    <li class="footer-socItem"><a href="" class="footer-socLink footer-socLinkinstagram"></a></li>
+                    <li class="footer-socItem"><a href="" class="footer-socLink footer-socLinkpinterest"></a></li>
+                </ul>
+            </div>
+            <i class="copyright">Copyright © 2019 Penguin Random House LLC. All Rights Reserved</i>
+        </footer>
+    </div>
+</body>
+</html>
