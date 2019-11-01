@@ -1,5 +1,447 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #F7F5ED;
+}
+::selection {
+    background: #BE9954;
+}
 #navPic{
-    width: 100%;height: 500px;
+    width: 100%;
+    height: 377px;
     background-image: url(http://www.randomhousebooks.com/wp-content/uploads/2019/10/Morris_edison.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    /* position: relative; */
+    position: absolute;
+    top:109px;
+    margin-top: -8px;
+    
+    
+    
+}
+@keyframes ts{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(0deg)}
+}
+
+#navText{
+    /* max-width: 670px; */
+    margin: 0 auto;
+    width: 100%;
+}
+#navText>.Edison:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+}
+#navText>p{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 140%;
+}
+#navText>.Edison{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-weight: 500;
+    /* line-height: 110%; */
+    color: #fff;
+    font-size: 55px;
+    font-style: italic;
+    padding-top: 80px;
+    text-align: center;
+}
+#navText>.read_more{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-style: italic;
+    margin-top: 10px;
+    text-shadow: 0px 1px 2px #fff;
+    font-size:20px;
+}
+
+/* part2 */
+#leftText,#rightText{
+    width: 50%;
+    /* background: pink; */
+    margin-top:62px;
+    padding: 50px 90px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#leftText{
+    /* background: #f7f5ed; */
+    background: #fdfafc;
+    border-right: 1px solid #ddd;
+}
+#rightText{
+    /* background: #fdfafc; */
+    background: #f7f5ed;
+}
+#leftText>em,#rightText>em{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+#leftText>em:hover{
+    text-decoration: underline;
+}
+#rightText>em:hover{
+    text-decoration: underline;
+}
+#leftText p,#rightText p{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 5px;
+}
+.strong{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(58, 56, 56);
+    text-shadow: 1px 0px 0px rgb(58, 56, 56);
+}
+
+/* homebody */
+#home-body{
+    padding: 50px 0px 0px ; 
+    background: pink;
+    width: 100%;
+    /* height: 50px; */
+    clear: both;
+    background: #fff;
+    overflow: hidden;  
+}
+#hom-title{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-size: 44px;
+    padding: 0 40px 10px;
+    margin: 0 auto 40px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    color: rgb(58, 56, 56);
+    /* background: purple; */
+    max-width: 1000px;   
+}
+#hom-title>p::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #BE9954;
+    /* margin: 0 auto; */
+    width: 360px;
+    position: relative;
+    left: 30%;
+    top: 8px;   
+}
+#hom-title>p::before{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #BE9954;
+    width: 320px;
+    position: relative;
+    left: 32%;
+    top: 64px;   
+}
+#home-book-width{
+    /* max-width: 1000px; */
+    width: 1000px;
+    margin:0 auto;
+    padding: 10px 20px 40px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+
+}
+.bookCard-large{
+    width: 48%;
+    float: right;
+    padding-bottom: 15px;
+    /* margin: 0 1% 25px; */
+    max-height: 500px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    border-bottom: 1px solid #ddd   
+}
+.bookCard{
+    width: 23%;
+    display: block;
+    float: left;
+    margin: 0 1% 25px;
+    padding-bottom: 25px;
+    min-height: 245px;
+    transition: 0.3s;     
+    border-bottom: 1px solid #ddd
+}
+/* .bookCard::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    left: 0;
+    height: 5px;
+    background-color: #BE9954;
+} */
+/* .bookCard-large::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+    height: 5px;
+    background-color: #BE9954;
+} */
+
+.bookCard:hover{
+    transform: translateY(-3px)
+}
+.bookCard-large:hover{
+    transform: translateY(-3px)
+}
+
+.bookCard:nth-child(4)>img{
+    margin-bottom: 40px;
+    padding-bottom: -20px;
+
+}
+.bookCard:nth-child(8){
+    clear: left;
+}
+.bookCard-large>img{
+    max-height: 490px;
+}
+.bookCard>img{
+    width: 65%;
+}
+
+/* home-email */
+.home-email{
+    padding: 0 0 40px;
+    background: #32322d;   
+    /* text-align: center; */
+}
+.emailSign{
+    margin: 0 91px;
+    padding: 40px 10px 50px;
+    max-width: 900px;
+    text-align: center;
+    /* background: pink; */
+    margin: 0 auto;
+}
+.email-formH{
+    margin: 0 0 19px;
+    font-size: 24px;
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-style: italic;
+    color: #fff;
+}
+.formHSelect::before{
+    content: "Stay in the know with our";  
+}
+.formHSelect::after{
+    content: "email lists";  
+}
+.email_list_name{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-style: italic;
+    color: #BE9954;
+    font-size: 23px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px dotted #BE9954;
+}
+.emailSignup{
+    background: #32322d;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 auto 20px;
+    border: 1px solid #AEADAB;
+    width: 100%;
+    font-family: "aaux-next",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+.Sign-input{
+    /* display: inline-block; */
+    width: 85%;
+    height: 48px;
+    /* border-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    /* border-right: 5px solid pink; */
+    float: left;
+    font-size: 19px;
+    padding-left: 15px;
+    background: #23231E;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    border-right: #AEADAB
+}
+.Sign-submitBtn{
+    background: transparent;
+    border: 0;
+    outline: 0;   
+}
+.Sign-submitBtnText{
+background: transparent;
+/* background: pink; */
+color: #fff;
+padding:15px 25px;
+cursor: pointer;
+border-left: 1px solid #AEADAB;
+position: relative;
+right: 10px;
+font-size: 16px;
+}
+.p_describe{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 0.5px 0px 1px #fff;
+}
+.p_describe>a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    transition: 0.5s;
+    
+}
+.p_describe>a:hover{
+    color: #BE9954  ;
+    text-decoration: none;
+    border-bottom: 1px dotted #BE9954  
+}
+
+/* stories */
+.home-stories{
+    background: transparent;
+
+}
+.home-stories-pullup{
+    padding: 15px 20px 0;
+    margin: -65px auto 0;
+    background: #fff;
+    max-width: 860px;
+    border-top: 3px solid #be9954;
+}
+.home-storiesWidth{
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+h4.home-storiesH{
+    padding: 9px 0 20px;
+    font-family: "aaux-next",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.storyTease{
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+    /* color: #fff; */
+
+}
+.storyTease-h{
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+.storyTease-link{
+    color: #444;
+    font-size: 28px;
+    text-decoration: none
+}
+.storyTease-link:hover{
+    border-bottom: 1px solid black;
+}
+.separator-gold::after{
+    content: "";
+    width: 20%;
+    border: 0.5px solid #be9954;
+    display: inline-block ;
+    position: relative;
+    top: -10px;
+
+}
+
+.separator-gold::before{
+    content: "";
+    width: 20%;
+    border: 0.5px solid #be9954;
+    display: inline-block ;
+    position: relative;
+    top: -10px;
+}
+.seperatorIcon{
+    display: inline-block;
+    width: 30px;height: 20px;
+    /* background: pink; */
+    background-image: url(http://www.randomhousebooks.com/wp-content/themes/wp_rhpg/static/img/icon/section--gold.svg);
+    background-repeat: no-repeat;     
+}
+.seperatorIcon::after{
+    content: "";
+    display: block;
+    width: 3px;height: 3px;
+    border-radius: 50%;
+    background: #be9954;
+    position: relative;
+    left: -125px;
+    top: 5px;
+}
+.seperatorIcon::before{
+    content: "";
+    display: block;
+    width: 3px;height: 3px;
+    border-radius: 50%;
+    background: #be9954;
+    position: relative;
+    right:-152px;
+    top: 8px;
+}
+.storyTease-h6{
+    font-size: 16px;
+    display: block;
+    padding: 10px 0px;
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-weight: 400;
+    color: #444;
+}
+.loadmore-stories{
+background: pink;
+}
+.loadmore-stories-btn{
+    padding: 48px 0 52px;
+    font-size: 18px;
+    color: #AEADAB;
+    text-align: center;
+    background: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-top: 1px solid #ddd;
+    transition: 0.3s;
+}
+.loadmore-stories-btn:hover{
+    color: #be9954;
 }
