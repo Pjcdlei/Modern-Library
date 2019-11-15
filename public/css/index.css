@@ -33,6 +33,19 @@ html{
     margin: 0 auto;
     width: 100%;
 }
+.Edison>a{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    position: absolute;
+    left: 42%;
+    top:25%;
+    
+    /* right: 30%; */
+
+    
+}
 #navText>.Edison:hover{
     cursor: pointer;
     text-decoration: underline; 

@@ -10,11 +10,16 @@ body{
     color: #444;
     background: #fff;
 }
+.bodyContent{
+    position: relative;
+  top:-310px;
+}
 ::selection{background: #BE9954;color: #fff;}
 
 .emailPrefs-topper{
     padding: 50px 20px 120px;
     background: #f7f5ed;
+    
 }
 .emailPrefs-hgroup{
     margin: 0 auto;
@@ -68,6 +73,7 @@ body{
     line-height: 170%;
     margin-bottom: 60px;
     font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    position: relative;
 }
 .emailPrefs-checkbox{
     vertical-align: bottom;
@@ -78,28 +84,16 @@ body{
     margin-top: 13px;
     float: left;
     clear: both;
+    /* position: relative; */
 
 }
-.emailPrefs-checkbox:checked{
+/* .emailPrefs-checkbox:checked{
     background-color: #BE9954;
     border-color: #BE9954;
-}
-/* .emailPrefs-checkbox:checked::after {
-    content: "";
-    width: 10px;
-    height: 5px;
-    position: absolute;
-    z-index: 1;
-    border-bottom: 3px solid #ffffff;
-    border-left: 3px solid #ffffff;
-    background-color: pink;
-    top: 4px;
-    right: 2px;
-    transform: rotate(-45deg);
 } */
 
 .emailPrefs-aboutList{
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .emailPrefs-aboutList h4{
     margin-bottom: 10PX;
@@ -139,16 +133,86 @@ body{
     margin-right: 8px;
 }
 /* ************ */
-#label{
+#a+#label{
     display: block;
     width: 20px;
     height: 20px;
     cursor: pointer;
     position: absolute;
-    top: 2px;
-    left: 15px;
-    background: rgba(240,84,77, 1)
+    top: 12px;
+    left: 0px;
+    background: #fff;
+    border:1px solid #AEADAB;
+    border-radius: 3px;
 }
-#a:checked+label::after{
-    display: 
+#a:checked+label::before{
+    display: block;
+    content: "\2714";
+    /* text-align: center; */
+    font-size: 18px;
+    color: purple;
+    position: relative;
+    top: -10px;
+    left: 2px;
 }
+#a{
+    visibility: hidden;
+}
+/* 原始修改checkbox的点击动画  bug*/
+/* .emailPrefs-checkbox::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    z-index: 1;
+    border-bottom: 11px solid #ffffff;
+    border-left: 11px solid #ffffff;
+    background-color:pink;
+    top: 4px;
+    right: 20px;
+} */
+/* email */
+.emailPrefs-emailAddress{
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
+.emailPrefs-formH{
+    text-align: center;
+    font-family: "Surveyor display A", "Surveyor Display B", Georgia, Times, serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 19px;
+}
+.emailSignup{
+    background: transparent;
+}
+.emailSignup-input{
+    background: transparent;
+    color: black
+
+}
+.Sign-submitBtn{
+    background: transparent
+}
+
+.emailSignup-submitBtnText{
+    color: #444;
+    background: transparent;
+    position: relative;
+    padding-top:16px;
+    bottom:-2px;
+}
+.emailPrefs-disclaimerText{
+    max-width: 650PX;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-family: "Surveyor display A","Surveyor Display B",Georgia,Times,serif;
+    font-style: italic;
+    color: #444;
+    line-height:150%;
+    text-shadow: 1px 0px 2px #ddd;
+}
+
